@@ -1,0 +1,21 @@
+{
+  "name" : "SF-La-Francesca-Api",
+  "config":{
+    "staging":{
+      "url": "apilafrancesca-staging.soluzionifutura.it",
+      "ssl_certs":{
+        "cert_file": "/etc/httpd/ssl/STAR_soluzionifutura_it.crt",
+        "key_cert_file": "/etc/httpd/ssl/star_soluzionifutura_it.key",
+        "bundle": "/etc/httpd/ssl/bundle.crt"
+      }
+    },
+    "production": {
+      "url": "api.villaggilafrancesca.it",
+      "ssl_certs":{
+        "cert_file": "/etc/httpd/ssl/SF-La-Francesca-Api/api.villaggilafrancesca.it.crt",
+        "key_cert_file": "/etc/httpd/ssl/SF-La-Francesca-Api/api_villaggilafrancesca_it.key",
+        "bundle": "/etc/httpd/ssl/SF-La-Francesca-Api/api.villaggilafrancesca.it.ca-bundle"
+      }
+    }
+  }
+}

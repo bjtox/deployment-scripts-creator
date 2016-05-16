@@ -1,0 +1,4 @@
+.idea
+dist
+build
+codedeploy_generator.egg-info
