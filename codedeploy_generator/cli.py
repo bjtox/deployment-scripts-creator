@@ -28,11 +28,7 @@ def main():
     """Main CLI entrypoint."""
     import commands
     options = docopt(__doc__)
-    print options
 
-    import inspect, os
-    print inspect.getfile(inspect.currentframe())  # script filename (usually with path)
-    print os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))  # script directory
 
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
@@ -44,5 +40,3 @@ def main():
             command = [command[1] for command in commands if command[0] != 'Base'][0]
             command = command(options)
             command.run()
-        else:
-            print "manca qualcosa"

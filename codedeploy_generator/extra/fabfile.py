@@ -34,7 +34,7 @@ def dist():
 
 @task
 def zip():
-    local("cd ./dist; zip -r ../deployment_scripts.zip *")
+    local("cd ./dist; zip -r ../deployment-scripts.zip *")
 
 @task
 def serve():
