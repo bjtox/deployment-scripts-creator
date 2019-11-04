@@ -13,5 +13,5 @@ pygobject==3.20.0
 pyodbc==3.0.7
 pyPdf==1.13
 pysqlite==2.7.0
-pyxdg==0.25
+pyxdg==0.26
 six==1.10.0
